@@ -168,7 +168,6 @@ public class AuthenticationService {
         }
     }
 
-    @PostMapping("/auth/refresh-token")
     public ResponseEntity<APIResponse<AuthenticationResponse>> refreshToken(
             @CookieValue(name = "refreshToken") String refreshToken) throws ParseException, JOSEException {
 
